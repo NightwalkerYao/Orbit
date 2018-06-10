@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr-CI">
+<head>
+    <title>My Custom Torrent Tracker!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="my fav Tracker">
+    <meta name="author" content="Nightwalker Yao">
+    <meta name="generator" content="Inspirates WS">
+    <link href="asset/css/font.css" rel="stylesheet" type="text/css">
+    <link href="asset/css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="asset/css/theme.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="navbar transparent">
+            <nav class="transparent">
+                <div class="nav-wrapper nav-principal-haut row">
+                    <div class="left col">
+                        <ul>
+                            <li>
+                                <a class="dropdown-trigger" data-target="dpdTorrents" href="#!">Torrents <i class="material-icons right">arrow_drop_down</i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-trigger" data-target="dpdCommunaute" href="#!">Communauté <i class="material-icons right">arrow_drop_down</i></a>
+                            </li>
+                            <li>
+                                <a href="#!">Nouvelles</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-trigger" data-target="more-appz">
+                                    <i class="large material-icons amber-text">apps</i>
+                                </a>
+                                <div class="dropdown-content center row Deroulant-appz" id="more-appz">
+                                    <a href="#!" class="col" title="Wiki"><i class="material-icons large lime-text">book</i></a>
+                                    <a href="#!" class="col" title="Aide"><i class="material-icons large blue-text">help</i></a>
+                                    <a href="#!" class="col" title="Flux RSS"><i class="material-icons large orange-text">rss_feed</i></a>
+                                    <a href="#!" class="col" title="Préférences"><i class="material-icons large purple-text">settings</i></a>
+                                    <a href="#!" class="col" title="Rapporter un bug"><i class="material-icons large red-text">bug_report</i></a>
+                                    <a href="#!" class="col" title="Faire un Don!"><i class="material-icons large yellow-text">euro_symbol</i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="dropdown-content" id="dpdTorrents">
+                        <li><a href="#!">Rechercher un Torrent</a></li>
+                        <li><a href="#!">Tous les Torrents</a></li>
+                        <li><a href="#!">Torrents mieux seedés</a></li>
+                        <li><a href="#!">Torrents plus leechés</a></li>
+                        <li><a href="#!">Torrents morts</a></li>
+                        <li><a href="#!">Meilleurs Torrents</a></li>
+                        <li><a href="#!">Uploader un Torrent</a></li>
+                    </ul>
+                    <ul class="dropdown-content" id="dpdCommunaute">
+                        <li><a href="#!">ChatRooms &amp; ShoutBox</a></li>
+                        <li><a href="#!">Forums</a></li>
+                        <li><a href="#!">Canaux IRC</a></li>
+                    </ul>
+                    <div class="right col">
+                        <ul>
+                            <li>
+                                <a href="#!">
+                                    <i class="material-icons left">mail</i>
+                                    <span class="reculer-gauche">&nbsp;0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="red-text">
+                                    <i class="material-icons left">file_upload</i>
+                                    <span class="reculer-gauche">19.54Go</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="green-text">
+                                    <i class="material-icons left">file_download</i>
+                                    <span class="reculer-gauche">58,10Go</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="white-text">
+                                    <b>Ratio: 4.69</b>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#!" class="dropdown-trigger" data-target="dpdMonCompte"><i class="material-icons">account_circle</i></a>
+                            </li>
+                        </ul>
+                        <ul class="dropdown-content" id="dpdMonCompte">
+                            <li><span>NightWalkerY.</span></li>
+                            <li><a href="#!"><i class="material-icons left">mail</i><span class="reculer-gauche"> Messages</span> <span class="badge new amber">1</span></a></li>
+                            <li><a href="#!"><i class="material-icons left">account_box</i><span class="reculer-gauche">Mon Compte</span></a></li>
+                            <li><a href="#!"><i class="material-icons left">cloud_upload</i><span class="reculer-gauche">Mes Uploads</span></a></li>
+                            <li><a href="#!"><i class="material-icons left">favorite</i><span class="reculer-gauche">Mes Favoris</span></a></li>
+                            <li><a href="#!"><i class="material-icons left">edit</i><span class="reculer-gauche">Editer mes infos</span></a></li>
+                            <li><a href="#!"><i class="material-icons left">settings_power</i><span class="reculer-gauche">Quitter</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul id="slide-out" class="sidenav sidenav-fixed nav-principal-gauche">
+            <div class="simulatri">
+                <li class="logotype">
+                    <a href="#!">
+                        <img src="asset/img/gtt.min.png" alt="Logo GTT" class="responsive-img">
+                    </a>
+                </li>
+                <li><a class="subheader"><b style="text-transform: uppercase;">Recherche</b></a></li>
+                <li>
+                    <ul class="collapsible expandable">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">search</i>Rechercher un Torrent
+                            </div>
+                            <div class="collapsible-body transparent">
+                                <form method="get" accept="#">
+                                    <div class="searchbox-wrapper">
+                                        <input type="search" name="q" id="leftSearchField" required="required" class="validate grey-text" value="" placeholder="Ecrivez ici...">
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="subheader"><b style="text-transform: uppercase;">Catégories</b></a></li>
+                <li>
+                    <ul class="collapsible expandable catBase">
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons left">audiotrack</i>Audios
+                            </div>
+                            <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!">Musiques</a>
+                                <a class="collection-item" href="#!">Concerts</a>
+                                <a class="collection-item" href="#!">Comédies</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons left">movie</i>Vidéos
+                            </div>
+                            <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!">Films</a>
+                                <a class="collection-item" href="#!">Séries TV</a>
+                                <a class="collection-item" href="#!">Emissions TV</a>
+                                <a class="collection-item" href="#!">Documentaires</a>
+                                <a class="collection-item" href="#!">Animations</a>
+                                <a class="collection-item" href="#!">Animations Série</a>
+                                <a class="collection-item" href="#!">Concerts</a>
+                                <a class="collection-item" href="#!">Sports</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons">book</i>E-books
+                            </div>
+                            <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!">Livres</a>
+                                <a class="collection-item" href="#!">Magazines</a>
+                                <a class="collection-item" href="#!">Presses</a>
+                                <a class="collection-item" href="#!">Mangas</a>
+                                <a class="collection-item" href="#!">BD</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"> 
+                                <i class="material-icons left">apps</i>Applications
+                            </div>
+                            <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!">Formations</a>
+                                <a class="collection-item" href="#!">Android</a>
+                                <a class="collection-item" href="#!">Windows</a>
+                                <a class="collection-item" href="#!">Linux</a>
+                                <a class="collection-item" href="#!">Web</a>
+                                <a class="collection-item" href="#!">Emulateurs</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header"> 
+                                <i class="material-icons left">videogame_asset</i>Jeux Vidéos
+                            </div>
+                            <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!">Android</a>
+                                <a class="collection-item" href="#!">Windows</a>
+                                <a class="collection-item" href="#!">Consoles</a>
+                                <a class="collection-item" href="#!">Linux</a>
+                            </div>
+                        </li>
+                        <li class="transparent">
+                            <div class="collapsible-header"> 
+                                <i class="material-icons left">remove_circle</i>Adultes 18+
+                            </div>
+                            <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!">Porn XXX</a>
+                                <a class="collection-item" href="#!">E-books</a>
+                                <a class="collection-item" href="#!">Parodies</a>
+                                <a class="collection-item" href="#!">Hentai</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <div id="doomic"><div><li>&nbsp;</li></div></div> -->
+                </li>
+                <li>
+                    <div class="divider grey grey-text text-darken-2"></div>
+                </li>
+                <li style="margin: 0; padding: 0;">
+                    <a class="subheader"><b>Copyright</b></a>
+                </li>
+                <li>
+                    <p style="margin: 0; line-height: 0.9" class="center">
+                        &copy; 2018 <a href="//inspirates.io.ci" target="_blank">Inspirates WS</a> | Version: 1.0.7
+                        <br>
+                        <small>Aucun droit réservé <br> Thème: <b>Orbit Zero</b> par <a href="//about.me/nightwalker.y" target="_blank">NightWalker Yao</a> </small>
+                    </p>
+                </li>
+            </div>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger pas-necessaire-sur-large"><i class="material-icons">menu</i></a>
+    </header>
+    <main>
+        <section>
+            <h1 class="titre-principal"><i class="material-icons left" style="font-size: 37pt;">cloud_download</i>Torrents</h1>
+            <div class="divider amber"></div>
+        <!-- the body is here -->
+            <br>
+            <div class="cadre-recherche">
+                <form method="get" action="#">
+                    <input type="hidden" name="page" value="search">
+                    <div class="row">
+                        <div class="col s12 m9 l9 searchbox-wrapper">
+                            <input type="search" name="q" value="" class="grey-text text-lighten-3 validate" required="required" id="sQuery" placeholder="Rechercher un Torrent">
+                        </div>
+                        <div class="col s12 m6 l5 input-field">
+                            <select name="category">
+                                <option value="0">Choisissez une Catégorie</option>
+                                <optgroup label='Audios'>
+                                    <option value="40">Musiques</option>
+                                    <option value="18">Concerts</option>
+                                    <option value="19">Comédies</option>
+                                </optgroup>
+                                <optgroup label='Vidéos'>
+                                    <option value="20">Films</option>
+                                    <option value="21">Séries TV</option>
+                                    <option value="22">Emissions TV</option>
+                                    <option value="23">Documentaires</option>
+                                    <option value="24">Animations</option>
+                                    <option value="25">Animations Série</option>
+                                    <option value="27">Concerts</option>
+                                    <option value="26">Sports</option>
+                                </optgroup>
+                                <optgroup label='E-books'>
+                                    <option value="28">Livres</option>
+                                    <option value="30">Magazines</option>
+                                    <option value="32">Presses</option>
+                                    <option value="31">Mangas</option>
+                                    <option value="29">BD</option>
+                                </optgroup>
+                                <optgroup label='Applications'>
+                                    <option value="38">Formations</option>
+                                    <option value="33">Android</option>
+                                    <option value="34">Windows</option>
+                                    <option value="35">Linux</option>
+                                    <option value="37">Web</option>
+                                    <option value="36">Emulateurs</option>
+                                </optgroup>
+                                <optgroup label='Jeux Vidéos'>
+                                    <option value="NN">Jeux Vidéos</option>
+                                    <option value="41">Android</option>
+                                    <option value="42">Windows</option>
+                                    <option value="43">Consoles</option>
+                                </optgroup>
+                                <optgroup label='Adultes 18+'>
+                                    <option value="45">Porn XXX</option>
+                                    <option value="46">E-books</option>
+                                    <option value="47">Parodies</option>
+                                    <option value="48">Hentai</option>
+                                </optgroup>
+                            </select>
+                            <label>Catégorie</label>
+                        </div>
+                        <div class="col s12 m6 l4 input-field">
+                            <select name="active" id="tstatus">
+                                <option value="0" >Tout</option>
+                                <option value="1" selected="selected">Actifs uniquement</option>
+                                <option value="2" >Morts uniquement</option>
+                            </select>
+                            <label>Statut</label>
+                        </div>
+                        <div class="col s12 m12 l3 input-field center-align">
+                            <button class="btn btn-flat waves-effect waves-light amber darken-1 white-text large"><i class="material-icons left">search</i> Rechercher</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <div style="margin: 0 0.25em;">
+                <table class="striped highlight responsive-table liste-torrents white">
+                    <thead>
+                        <tr>
+                            <th class="center">Type</th>
+                            <th>Titre</th>
+                            <th class="center">Age</th>
+                            <th class="center">Taille</th>
+                            <th class="center">Seed.</th>
+                            <th class="center">Leech.</th>
+                            <th class="center">Compl.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td class="left-align" align="left">
+                                <a href="#!" class="bold">Duis autem vel eum iriure dolor in hendrerit</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="italic center">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td>
+                                <a href="#!" class="bold">Lorem ipsum dolor sit amet</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="italic center">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td>
+                                <a href="#!" class="bold">Lorem ipsum dolor sit amet Duis autem vel eum iriure dolor in hendrerit</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="center italic">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td>
+                                <a href="#!" class="bold">Duis autem vel eum iriure dolor in</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="center italic">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td class="left-align" align="left">
+                                <a href="#!" class="bold">Duis autem vel eum iriure dolor in hendrerit</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="italic center">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td>
+                                <a href="#!" class="bold">Lorem ipsum dolor sit amet</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="italic center">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td>
+                                <a href="#!" class="bold">Lorem ipsum dolor sit amet Duis autem vel eum iriure dolor in hendrerit</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="center italic">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td>
+                                <a href="#!" class="bold">Duis autem vel eum iriure dolor in</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="center italic">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td class="left-align" align="left">
+                                <a href="#!" class="bold">Duis autem vel eum iriure dolor in hendrerit</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="italic center">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td>
+                                <a href="#!" class="bold">Lorem ipsum dolor sit amet</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="italic center">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td>
+                                <a href="#!" class="bold">Lorem ipsum dolor sit amet Duis autem vel eum iriure dolor in hendrerit</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="center italic">5986</td>
+                        </tr>
+                        <tr>
+                            <td class="center">Windows</td>
+                            <td>
+                                <a href="#!" class="bold">Duis autem vel eum iriure dolor in</a>
+                            </td>
+                            <td class="center">5 minutes</td>
+                            <td class="center">15.72Go</td>
+                            <td class="green-text center">145</td>
+                            <td class="red-text center">897</td>
+                            <td class="center italic">5986</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+        <!-- body end -->
+        </section>
+    </main>
+    <footer>
+        <br>
+        <br>
+        <div class="center container" style="box-shadow: inset 2px 2px 2px rgba(249, 190, 35, 0.75); color: rgba(249, 190, 35, 0.75)"><h3 class="bold">Ortbit BitTorrent Tracker</h3></div>
+    </footer>
+    <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="asset/js/materialize.min.js"></script>
+    <script type="text/javascript" src="asset/js/theme.js"></script>
+</body>
+</html>
