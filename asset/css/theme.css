@@ -1,8 +1,8 @@
-/**	Genoha Torrent Tracker
+/**	Orbit BitTorrent Tracker
 **	CSS for Default Theme by NightWalker Yao (http://about.me/nightwalker.y)
 **	Inspired by Plex !
 **/
-html{background-image: url('../img/77846-1440x908.jpg'); background-size: cover; background-attachment: fixed; font-family:Arial,sans-serif;}
+html{background-image: url('../img/77846-1440x908.jpg'); background-size: cover; background-attachment: fixed; font-family:Exo,Arial,sans-serif;}
 header, main, footer {padding-left: 300px;}
 @media only screen and (max-width : 992px) {
 	header, main, footer {padding-left: 0;}
@@ -10,11 +10,11 @@ header, main, footer {padding-left: 300px;}
 @media only screen and (min-width : 993px) {
 	a.pas-necessaire-sur-large{display: none;}
 }
-.nav-principal-haut{padding-right: 0; padding-left: 5px; background: url('../img/212948.png') center center repeat;}
+.nav-principal-haut{padding-right: 0; padding-left: 5px; background: url('../img/topheaderbg.png') center center repeat;}
 .nav-principal-gauche{background: url('../img/npgauche.png') center center repeat;}
 span.reculer-gauche{position: relative; left: -12px;}
 .logotype{background: url('../img/nphgauche.png') center center repeat; padding-bottom: 2em;}
-div.#doomic{position: relative; z-index: 2; overflow: hidden; max-height: 100%;}
+div#doomic{position: relative; z-index: 2; overflow: hidden; max-height: 100%;}
 /**#doomic div:after{background-color: yellow; width: 150px; height: 500px; bottom: -2em; right: 0; content: ""; transform: rotate(75deg); z-index: 5; position: absolute; overflow: hidden;}*/
 div.simulatri div.collection, div.simulatri a.collection-item{background-color: transparent; border:none;}
 div.simulatri a.collection-item{color: #eb7f63;}
@@ -23,10 +23,10 @@ div.collapsible-header{color: #b0beb3; font-weight: bold;}
 div.searchbox-wrapper{margin: 0 1em;}
 a.subheader b{color: rgba(249, 190, 35, 0.85); text-transform: uppercase;}
 div.Deroulant-appz{background-color: rgba(43, 60, 75, 0.9)}
-main{background: -moz-linear-gradient(-60deg, rgba(62, 85, 100, 0.47), rgba(62, 85, 100, 1.0)); background: -o-linear-gradient(-60deg, rgba(62, 85, 100, 0.47), rgba(62, 85, 100, 1.0)); background: -ms-linear-gradient(-60deg, rgba(62, 85, 100, 0.47), rgba(62, 85, 100, 1.0)); background: -webkit-linear-gradient(-60deg, rgba(62, 85, 100, 0.47), rgba(62, 85, 100, 1.0));background: linear-gradient(-60deg, rgba(62, 85, 100, 0.47), rgba(62, 85, 100, 1.0)); color: #cbced0; margin: 0; min-height: 100%; word-wrap: break-word;}
-h1.titre-principal{margin: 0; padding:15px; text-transform: uppercase;}
+main{background: -moz-linear-gradient(-60deg, rgba(62, 85, 100, 0.47), rgba(62, 85, 100, 1.0)); background: -o-linear-gradient(-60deg, rgba(62, 85, 100, 0.47), rgba(62, 85, 100, 1.0)); background: -ms-linear-gradient(-60deg, rgba(62, 85, 100, 0.47), rgba(62, 85, 100, 1.0)); background: -webkit-linear-gradient(-60deg, rgba(62, 85, 100, 0.47), rgba(62, 85, 100, 1.0));background: linear-gradient(60deg, rgba(62, 85, 100, 0.77), rgba(62, 85, 100, 1.0)); color: #cbced0; margin: 0; min-height: 100%; word-wrap: break-word;}
+h1.titre-principal{margin: 0; padding:15px; text-transform: uppercase; font-family: 'Montserrat', sans-serif;}
 h1{color: rgba(249, 190, 35, 0.85); font-size: 32pt; font-weight: bold;}
-h2{color: rgba(249, 190, 35, 0.85); font-size: 24pt; font-weight: normal; padding: 15px 15px 7px 15px; margin: 15px 0 0 0; text-transform: uppercase;}
+h2{color: rgba(249, 190, 35, 0.85); font-size: 24pt; font-weight: normal; padding: 15px 15px 7px 15px; margin: 15px 0 0 0; text-transform: uppercase; font-family: 'Montserrat', sans-serif;}
 h2 i.material-icons{font-size: 27pt;}
 table.liste-torrents{color: #2a313c;}
 table.liste-torrents th{border-bottom: 2px solid rgba(249, 190, 35, 0.75);}
@@ -41,3 +41,15 @@ table.liste-torrents td{border: 1px solid rgba(249, 190, 35, 0.75); padding: 5px
 div.vous-etes-ici{background-color: rgba(42, 49, 60, 0.77); padding: 1em; font-size: 14pt; color: #b0beb3; font-family: "Courier New"}
 table.liste-fichiers-torrent th, table.liste-fichiers-torrent td{padding: 4px;}
 table.liste-fichiers-torrent th{border-bottom: 2px solid darkgray;}
+div.derniers-termes-recherche{padding: 0 2em 1em 2em}
+div.lisez-moi-upload i.material-icons{font-size: 7em; color: rgba(249, 190, 35, 0.85)}
+div.lisez-moi-upload div.info-wrap{vertical-align: middle; margin-top: 2em}
+.theme-bouton{background-color: rgba(249, 190, 35, 0.85);}
+.theme-bouton:hover{background-color: rgba(249, 190, 35, 1.0);}
+div.torrent-fichier-wrap,div.champ-torrent-nom{margin: 0 5%}
+.block{display: block;clear: both;}
+div.row.loginform div{margin-left: auto; margin-right: auto; text-align: center; clear: both;}
+div.my-avatar{padding: 1em; background-color: #1b1b1b;}
+div.col.my-infos p{margin: 0 0 7px 0;}
+div.col.my-infos p span i.iicone{position: relative; top:3px; font-size: 12pt;}
+.securitaire{background: url('../img/topheaderbg.png') center center repeat;}

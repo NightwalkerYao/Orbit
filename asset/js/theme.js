@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var COLelems = document.querySelectorAll('.collapsible.expandable');
     var COLinstances = M.Collapsible.init(COLelems,{accordion: true});
     var DDelems = document.querySelectorAll('.dropdown-trigger');
-    var DDinstances = M.Dropdown.init(DDelems, {hover:false, alignment:'right', closeOnClick:true, constrainWidth:false,coverTrigger:false});
+    var DDinstances = M.Dropdown.init(DDelems, {hover:false, alignment:'right', closeOnClick:true, constrainWidth:false,coverTrigger:false,inDuration:500,outDuration:400});
     var FSelems = document.querySelectorAll('select');
-    var FSinstances = M.FormSelect.init(FSelems, {/*classes: ''*/});
+    var FSinstances = M.FormSelect.init(FSelems, {/*classes: 'formSelect0'*/});
 });

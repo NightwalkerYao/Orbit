@@ -11,6 +11,7 @@
     <link href="asset/css/font.css" rel="stylesheet" type="text/css">
     <link href="asset/css/materialize.min.css" rel="stylesheet" type="text/css">
     <link href="asset/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Exo|Indie+Flower|Montserrat" rel="stylesheet"> 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -51,12 +52,12 @@
                     </div>
                     <ul class="dropdown-content" id="dpdTorrents">
                         <li><a href="/torrent-search.html">Rechercher un Torrent</a></li>
-                        <li><a href="#!">Tous les Torrents</a></li>
+                        <li><a href="/torrents.html">Tous les Torrents</a></li>
                         <li><a href="#!">Torrents mieux seedés</a></li>
                         <li><a href="#!">Torrents plus leechés</a></li>
                         <li><a href="#!">Torrents morts</a></li>
                         <li><a href="#!">Meilleurs Torrents</a></li>
-                        <li><a href="#!">Uploader un Torrent</a></li>
+                        <li><a href="/upload-torrent.html">Uploader un Torrent</a></li>
                     </ul>
                     <ul class="dropdown-content" id="dpdCommunaute">
                         <li><a href="#!">ChatRooms &amp; ShoutBox</a></li>
@@ -74,18 +75,18 @@
                             <li>
                                 <span class="red-text">
                                     <i class="material-icons left">file_upload</i>
-                                    <span class="reculer-gauche">19.54Go</span>
+                                    <span class="reculer-gauche">15.0Go</span>
                                 </span>
                             </li>
                             <li>
                                 <span class="green-text">
                                     <i class="material-icons left">file_download</i>
-                                    <span class="reculer-gauche">58,10Go</span>
+                                    <span class="reculer-gauche">15.0Go</span>
                                 </span>
                             </li>
                             <li>
                                 <span class="white-text">
-                                    <b>Ratio: 4.69</b>
+                                    <b>Ratio: 1.0</b>
                                 </span>
                             </li>
                             <li>
@@ -93,12 +94,13 @@
                             </li>
                         </ul>
                         <ul class="dropdown-content" id="dpdMonCompte">
-                            <li><span>NightWalkerY.</span></li>
-                            <li><a href="#!"><i class="material-icons left">mail</i><span class="reculer-gauche"> Messages</span> <span class="badge new amber">1</span></a></li>
+                            <li><span>127.0.0.1</span></li>
+                            <li><a href="#!"><i class="material-icons left">mail</i><span class="reculer-gauche"> Messages</span> <span class="badge new amber">0</span></a></li>
+                            <li><a href="#!"><i class="material-icons left">notifications</i><span class="reculer-gauche"> Nottifications</span> <span class="badge new orange">0</span></a></li>
                             <li><a href="#!"><i class="material-icons left">account_box</i><span class="reculer-gauche">Mon Compte</span></a></li>
                             <li><a href="#!"><i class="material-icons left">cloud_upload</i><span class="reculer-gauche">Mes Uploads</span></a></li>
                             <li><a href="#!"><i class="material-icons left">favorite</i><span class="reculer-gauche">Mes Favoris</span></a></li>
-                            <li><a href="#!"><i class="material-icons left">edit</i><span class="reculer-gauche">Editer mes infos</span></a></li>
+                            <li><a href="/user-register.html"><i class="material-icons left">edit</i><span class="reculer-gauche">Editer mes infos</span></a></li>
                             <li><a href="#!"><i class="material-icons left">settings_power</i><span class="reculer-gauche">Quitter</span></a></li>
                         </ul>
                     </div>
@@ -137,6 +139,7 @@
                                 <i class="material-icons left">audiotrack</i>Audios
                             </div>
                             <div class="collapsible-body collection">
+                                <a href="#!" class="collection-item"><i class="material-icons left">audiotrack</i>Audios</a>
                                 <a class="collection-item" href="#!">Musiques</a>
                                 <a class="collection-item" href="#!">Concerts</a>
                                 <a class="collection-item" href="#!">Comédies</a>
@@ -147,6 +150,7 @@
                                 <i class="material-icons left">movie</i>Vidéos
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons left">movie</i>Vidéos</a>
                                 <a class="collection-item" href="#!">Films</a>
                                 <a class="collection-item" href="#!">Séries TV</a>
                                 <a class="collection-item" href="#!">Emissions TV</a>
@@ -162,6 +166,7 @@
                                 <i class="material-icons">book</i>E-books
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons">book</i>E-books</a>
                                 <a class="collection-item" href="#!">Livres</a>
                                 <a class="collection-item" href="#!">Magazines</a>
                                 <a class="collection-item" href="#!">Presses</a>
@@ -174,6 +179,7 @@
                                 <i class="material-icons left">apps</i>Applications
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons left">apps</i>Applications</a>
                                 <a class="collection-item" href="#!">Formations</a>
                                 <a class="collection-item" href="#!">Android</a>
                                 <a class="collection-item" href="#!">Windows</a>
@@ -187,6 +193,7 @@
                                 <i class="material-icons left">videogame_asset</i>Jeux Vidéos
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons left">videogame_asset</i>Jeux Vidéos</a>
                                 <a class="collection-item" href="#!">Android</a>
                                 <a class="collection-item" href="#!">Windows</a>
                                 <a class="collection-item" href="#!">Consoles</a>
@@ -198,6 +205,7 @@
                                 <i class="material-icons left">remove_circle</i>Adultes 18+
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons left">remove_circle</i>Adultes 18+</a>
                                 <a class="collection-item" href="#!">Porn XXX</a>
                                 <a class="collection-item" href="#!">E-books</a>
                                 <a class="collection-item" href="#!">Parodies</a>
@@ -215,7 +223,7 @@
                 </li>
                 <li>
                     <p style="margin: 0; line-height: 0.9" class="center">
-                        &copy; 2018 <a href="//inspirates.io.ci" target="_blank">Inspirates WS</a> | Version: 1.0.7
+                        &copy; 2018 <a href="//inspirates.io.ci" target="_blank">Inspirates WS</a> | version: 1.0.7b-o-T
                         <br>
                         <small>Aucun droit réservé <br> Thème: <b>Orbit Zero</b> par <a href="//about.me/nightwalker.y" target="_blank">NightWalker Yao</a> </small>
                     </p>
@@ -226,49 +234,60 @@
     </header>
     <main>
         <section>
-            <h1 class="titre-principal"><i class="material-icons left" style="font-size: 37pt;">cloud_download</i>Torrents</h1>
+            <h1 class="titre-principal"><i class="material-icons left" style="font-size: 37pt;">account_circle</i> Profil de Orbit_Username</h1>
             <div class="divider amber"></div>
-        <!-- the body is here -->
-            <br>
-            <div class="cadre-recherche">
-                <form method="get" action="#">
-                    <input type="hidden" name="page" value="search">
+            <div class="row">
+                <div class="card-panel flat" style="background-color: #2a313c">
                     <div class="row">
-                        <div class="col s12 m9 l9 searchbox-wrapper">
-                            <input type="search" name="q" value="" class="grey-text text-lighten-3 validate" required="required" id="sQuery" placeholder="Rechercher un Torrent">
+                        <div class="col l3 s10 m3">
+                            <div class="my-avatar">
+                                <img src="/images/img4.jpg" class="responsive-img" alt="Orbit">
+                            </div>
                         </div>
-                        <div class="col s12 m6 l4 input-field">
-                            <select name="category" id="category">
-                                <option value="0">Choisissez une Catégorie</option>
-                                <option value="1">Audios</option>
-                                <option value="2">Vidéos</option>
-                                <option value="3">E-Books</option>
-                                <option value="4">Applications</option>
-                                <option value="5">Jeux Vidéos</option>
-                                <option value="6">Adultes 18+</option>
-                            </select>
-                            <label>Catégorie</label>
+                        <div class="col my-infos l9 s12 m9">
+                            <div class="row">
+                                <div class="col l6 s12 m6 basics-ui">
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Pseudo <i class="material-icons iicone">person</i></span><span class="col l5 s6 m6">Orbit-User</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Rang <i class="material-icons iicone">call_to_action</i></span><span class="col l6 s6 m6 left-align cyan-text">Utilisateur</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Pays <i class="material-icons iicone">public</i></span><span class="col l6 s6 m6 left-align">Senegal</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Age <i class="material-icons iicone">cake</i></span><span class="col l6 s6 m6 left-align">24 ans</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Sexe <i class="material-icons iicone">assignment_ind</i></span><span class="col l6 s6 m6 left-align">Homme</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Inscription </span><span class="col l6 s6 m6 left-align">18 Juin 2018</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Dernier accès <i class="material-icons iicone">access_time</i></span><span class="col l6 s6 m6 left-align">Il y a 57 minutes</span></p>
+                                </div>
+                                <div class="col l6 s12 m6 others-ui">
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Torrents <i class="material-icons iicone">account_balance</i></span><span class="col l6 s6 m6 left-align"><a href="#!">24</a></span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Uploads <i class="material-icons iicone">file_upload</i></span><span class="col l6 s6 m6 left-align red-text">240.5 Mio</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Downloads <i class="material-icons iicone">file_download</i></span><span class="col l6 s6 m6 left-align green-text">1.98 Tio</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Ratio <i class="material-icons iicone">battery_unknown</i></span><span class="col l6 s6 m6 left-align blue-text">10.9</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Commentaire <i class="material-icons iicone">comment</i></span><span class="col l6 s6 m6 left-align">149</span></p>
+                                    <p class="row"><span class="bold col l6 s6 m6 right-align">Fuseau horaire <i class="material-icons iicone">access_time</i></span><span class="col l5 s6 m6">GMT+9 (19 Juin, 10:48) </span></p>
+                                </div>
+                                <div class="col l12 s12 m12 center securitaire">
+                                    <p>
+                                        <span class="bold">PassKey <i class="material-icons iicone">vpn_key</i> </span><strong class="amber-text"> &nbsp;&nbsp; 148HF8OE45CVB1KPS36904778RFGT7T5ASD48E</strong>  [<a href="#!">r&eacute;initialiser</a>]
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col s12 m6 l4 input-field" id="subwrapp">
-                            <select name="subcategory" id="subcategory" disabled="disabled">
-                                <option value="0">Choisissez une sous-catégorie</option>
-                            </select>
-                            <label>Sous-Catégorie</label>
-                        </div>
-                        <div class="col s12 m6 l4 input-field">
-                            <select name="active" id="tstatus">
-                                <option value="0" >Tout</option>
-                                <option value="1" selected="selected">Actifs uniquement</option>
-                                <option value="2" >Morts uniquement</option>
-                            </select>
-                            <label>Statut</label>
-                        </div>
-                        <div class="col s12 m12 l3 input-field center-align">
-                            <button class="btn btn-flat waves-effect waves-light amber darken-1 white-text large"><i class="material-icons left">search</i> Rechercher</button>
+                        <div class="col l12 m12">
+                                <div class="col l4">
+                                    <a href="#!"><i class="material-icons iiicone left">favorite_outline</i> Mes Favoris</a>
+                                </div>
+                                <div class="col l4">
+                                    <a href="#!"><i class="material-icons iiicone left">cloud_download</i> Mes Téléchargements</a>
+                                </div>
+                                <div class="col l4">
+                                    <a href="#!"><i class="material-icons iiicone left">schedule</i> Ma liste de souhaits</a>
+                                </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
+        </section>
+        <section>
+            <h2><i class="material-icons left">access_time</i> Torrents par Orbit-User: 156</h2>
+            <div class="divider amber"></div>
             <br>
             <div style="margin: 0 0.25em;">
                 <table class="striped highlight responsive-table liste-torrents white">
@@ -419,18 +438,135 @@
                     </tbody>
                 </table>
             </div>
-            <br>
-        <!-- body end -->
         </section>
+        <section>
+            <h2><i class="material-icons left">image</i> Changer l'image de profil</h2>
+            <div class="divider amber"></div>
+            <br>
+            <div class="row">
+                <form method="post" action="#" enctype="multipart/form-data">
+                    <div class="col l12 s12 m12 input-field file-field">
+                        <div class="btn btn-flat waves-effect waves-light theme-bouton white-text">
+                            <span><i class="material-icons left">image</i> Choisir dans mes fichiers</span>
+                            <input type="file" name="mypic">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                    <div class="col l12 s12 m12 input-field">
+                        <i class="material-icons prefix">insert_link</i>
+                        <input type="url" name="picUrl" id="picUrl" />
+                        <label for="picUrl">Ajouter l'image depuis une URL</label>
+                    </div>
+                    <div class="col center s12 m12 l12">
+                        <button type="submit" class="btn btn-flat waves-light waves-effect theme-bouton white-text"><i class="material-icons left">save</i> Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <h2><i class="material-icons left">edit</i> &Eacute;diter mon profil</h2>
+            <div class="divider amber"></div>
+            <br>
+            <div class="row">
+                <form method="post" action="#">
+                <div class="col input-field l4 s12 m6">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" name="longName" id="longName" class="validate" required="required">
+                    <label for="longName">Nom</label>
+                </div>
+                <div class="col input-field l4 s12 m6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input type="text" name="username" id="username" class="validate" required="required">
+                    <label for="username">Pseudo</label>
+                </div>
+                <div class="col input-field l4 s12 m6">
+                    <i class="material-icons prefix">contact_mail</i>
+                    <input type="email" name="email" id="email" class="validate" required="required">
+                    <label for="email">Adresse e-mail</label>
+                </div>
+                <div class="col input-field l4 s12 m6">
+                    <i class="material-icons prefix">security</i>
+                    <input type="password" name="password" id="password" class="validate" required="required">
+                    <label for="password">Mot de passe</label>
+                </div>
+                <div class="col input-field l4 s12 m6">
+                    <i class="material-icons prefix">security</i>
+                    <input type="password" name="password1" id="password1" class="validate" required="required">
+                    <label for="password1">Confirmez le mdp</label>
+                </div>
+                <div class="col input-field l4 s12 m6">
+                    <i class="material-icons prefix">location_on</i>
+                    <input type="text" name="city" id="city" class="validate" required="required">
+                    <label for="city">Ville</label>
+                </div>
+                <div class="col input-field l6 s12 m6">
+                    <i class="material-icons prefix">language</i>
+                    <select name="country" id="country">
+                        <option value="C0">Pays 1</option>
+                        <option value="CI1">Pays 2</option>
+                        <option value="CI2">Pays 3</option>
+                        <option value="CI3">Pays 4</option>
+                    </select>
+                    <label>Pays</label>
+                </div>
+                <div class="col input-field l6 s12 m6">
+                    <i class="material-icons prefix">access_time</i>
+                    <select name="timezone" id="timezone">
+                        <option value="C0">Pays 1</option>
+                        <option value="CI1">Pays 2</option>
+                        <option value="CI2">Pays 3</option>
+                        <option value="CI3">Pays 4</option>
+                    </select>
+                    <label>Fuseau horaire</label>
+                </div>
+                <div class="col center s12 m12 l12">
+                    <button type="submit" class="btn btn-flat waves-light waves-effect theme-bouton white-text"><i class="material-icons left">save</i> Enregistrer</button>
+                </div>
+                </form>
+            </div>
+        </section>
+        <section>
+            <h2><i class="material-icons left">security</i> Changer de mot de passe</h2>
+            <div class="divider amber"></div>
+            <br>
+            <div class="row">
+                <form method="post" action="#">
+                <div class="col input-field l4 s12 m6">
+                    
+                    <input type="text" name="longName" id="longName" class="validate" required="required">
+                    <label for="longName">Ancien</label>
+                </div>
+                <div class="col input-field l4 s12 m6">
+                    
+                    <input type="text" name="username" id="username" class="validate" required="required">
+                    <label for="username">Nouveau</label>
+                </div>
+                <div class="col input-field l4 s12 m6">
+                    
+                    <input type="email" name="email" id="email" class="validate" required="required">
+                    <label for="email">Confirmer</label>
+                </div>
+                <div class="col center s12 m12 l12">
+                    <button type="submit" class="btn btn-flat waves-light waves-effect theme-bouton white-text"><i class="material-icons left">save</i> Enregistrer</button>
+                </div>
+                </form>
+            </div>
+        </section>
+        <br>
+        <br>
     </main>
     <footer>
         <br>
         <br>
-        <div class="center container" style="box-shadow: inset 2px 2px 2px rgba(249, 190, 35, 0.75); color: rgba(249, 190, 35, 0.75)"><h3 class="bold">Ortbit BitTorrent Tracker</h3></div>
+        <div class="center container" style="box-shadow: inset 2px 2px 2px rgba(249, 190, 35, 0.75); color: rgba(249, 190, 35, 0.75)">
+            <h3 class="bold" style="margin-bottom: 0em;">Ortbit BitTorrent Tracker</h3>
+            <small class="italic">Ceci est la version Beta-Open-Tracker du projet Orbit de Tracker Bittorrent Privé</small>
+        </div>
     </footer>
     <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="asset/js/materialize.min.js"></script>
     <script type="text/javascript" src="asset/js/theme.js"></script>
-    <script type="text/javascript" src="asset/js/orbit.js"></script>
 </body>
 </html>
