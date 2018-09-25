@@ -10,6 +10,7 @@
     <meta name="generator" content="Inspirates WS">
     <link href="asset/css/font.css" rel="stylesheet" type="text/css">
     <link href="asset/css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Exo:200,400,500,700,900|Indie+Flower|Montserrat:100,300,400,500,700,900" rel="stylesheet">
     <link href="asset/css/theme.css" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,13 +51,13 @@
                         </ul>
                     </div>
                     <ul class="dropdown-content" id="dpdTorrents">
-                        <li><a href="/torrent-search.html">Rechercher un Torrent</a></li>
-                        <li><a href="#!">Tous les Torrents</a></li>
+                        <li><a href="torrent-search.html">Rechercher un Torrent</a></li>
+                        <li><a href="torrents.html">Tous les Torrents</a></li>
                         <li><a href="#!">Torrents mieux seedés</a></li>
                         <li><a href="#!">Torrents plus leechés</a></li>
                         <li><a href="#!">Torrents morts</a></li>
                         <li><a href="#!">Meilleurs Torrents</a></li>
-                        <li><a href="#!">Uploader un Torrent</a></li>
+                        <li><a href="upload-torrent.html">Uploader un Torrent</a></li>
                     </ul>
                     <ul class="dropdown-content" id="dpdCommunaute">
                         <li><a href="#!">ChatRooms &amp; ShoutBox</a></li>
@@ -67,25 +68,25 @@
                         <ul>
                             <li>
                                 <a href="#!">
-                                    <i class="material-icons left">mail</i>
+                                    <i class="material-icons left">notifications</i>
                                     <span class="reculer-gauche">&nbsp;0</span>
                                 </a>
                             </li>
                             <li>
                                 <span class="red-text">
                                     <i class="material-icons left">file_upload</i>
-                                    <span class="reculer-gauche">19.54Go</span>
+                                    <span class="reculer-gauche">15.0Go</span>
                                 </span>
                             </li>
                             <li>
                                 <span class="green-text">
                                     <i class="material-icons left">file_download</i>
-                                    <span class="reculer-gauche">58,10Go</span>
+                                    <span class="reculer-gauche">15.0Go</span>
                                 </span>
                             </li>
                             <li>
                                 <span class="white-text">
-                                    <b>Ratio: 4.69</b>
+                                    <b>Ratio: 1.0</b>
                                 </span>
                             </li>
                             <li>
@@ -93,12 +94,11 @@
                             </li>
                         </ul>
                         <ul class="dropdown-content" id="dpdMonCompte">
-                            <li><span>NightWalkerY.</span></li>
-                            <li><a href="#!"><i class="material-icons left">mail</i><span class="reculer-gauche"> Messages</span> <span class="badge new amber">1</span></a></li>
+                            <li><span>127.0.0.1</span></li>
                             <li><a href="#!"><i class="material-icons left">account_box</i><span class="reculer-gauche">Mon Compte</span></a></li>
                             <li><a href="#!"><i class="material-icons left">cloud_upload</i><span class="reculer-gauche">Mes Uploads</span></a></li>
                             <li><a href="#!"><i class="material-icons left">favorite</i><span class="reculer-gauche">Mes Favoris</span></a></li>
-                            <li><a href="#!"><i class="material-icons left">edit</i><span class="reculer-gauche">Editer mes infos</span></a></li>
+                            <li><a href="/user-register.html"><i class="material-icons left">edit</i><span class="reculer-gauche">Editer mes infos</span></a></li>
                             <li><a href="#!"><i class="material-icons left">settings_power</i><span class="reculer-gauche">Quitter</span></a></li>
                         </ul>
                     </div>
@@ -108,11 +108,11 @@
         <ul id="slide-out" class="sidenav sidenav-fixed nav-principal-gauche">
             <div class="simulatri">
                 <li class="logotype">
-                    <a href="/">
-                        <img src="asset/img/gtt.min.png" alt="Logo GTT" class="responsive-img">
-                    </a>
+                  <div class="logolike">
+                    <a href="index.html" class="smoky">Orbitt 1.0</a>
+                  </div>
                 </li>
-                <li><a class="subheader"><b style="text-transform: uppercase;">Recherche</b></a></li>
+                <li><a class="subheader"><b>Recherche</b></a></li>
                 <li>
                     <ul class="collapsible expandable">
                         <li>
@@ -129,7 +129,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a class="subheader"><b style="text-transform: uppercase;">Catégories</b></a></li>
+                <li><a class="subheader"><b>Catégories</b></a></li>
                 <li>
                     <ul class="collapsible expandable catBase">
                         <li>
@@ -137,6 +137,7 @@
                                 <i class="material-icons left">audiotrack</i>Audios
                             </div>
                             <div class="collapsible-body collection">
+                                <a href="#!" class="collection-item"><i class="material-icons left">audiotrack</i>Audios</a>
                                 <a class="collection-item" href="#!">Musiques</a>
                                 <a class="collection-item" href="#!">Concerts</a>
                                 <a class="collection-item" href="#!">Comédies</a>
@@ -147,6 +148,7 @@
                                 <i class="material-icons left">movie</i>Vidéos
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons left">movie</i>Vidéos</a>
                                 <a class="collection-item" href="#!">Films</a>
                                 <a class="collection-item" href="#!">Séries TV</a>
                                 <a class="collection-item" href="#!">Emissions TV</a>
@@ -162,6 +164,7 @@
                                 <i class="material-icons">book</i>E-books
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons">book</i>E-books</a>
                                 <a class="collection-item" href="#!">Livres</a>
                                 <a class="collection-item" href="#!">Magazines</a>
                                 <a class="collection-item" href="#!">Presses</a>
@@ -170,10 +173,11 @@
                             </div>
                         </li>
                         <li>
-                            <div class="collapsible-header"> 
+                            <div class="collapsible-header">
                                 <i class="material-icons left">apps</i>Applications
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons left">apps</i>Applications</a>
                                 <a class="collection-item" href="#!">Formations</a>
                                 <a class="collection-item" href="#!">Android</a>
                                 <a class="collection-item" href="#!">Windows</a>
@@ -183,10 +187,11 @@
                             </div>
                         </li>
                         <li>
-                            <div class="collapsible-header"> 
+                            <div class="collapsible-header">
                                 <i class="material-icons left">videogame_asset</i>Jeux Vidéos
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons left">videogame_asset</i>Jeux Vidéos</a>
                                 <a class="collection-item" href="#!">Android</a>
                                 <a class="collection-item" href="#!">Windows</a>
                                 <a class="collection-item" href="#!">Consoles</a>
@@ -194,10 +199,11 @@
                             </div>
                         </li>
                         <li class="transparent">
-                            <div class="collapsible-header"> 
+                            <div class="collapsible-header">
                                 <i class="material-icons left">remove_circle</i>Adultes 18+
                             </div>
                             <div class="collapsible-body collection">
+                                <a class="collection-item" href="#!"><i class="material-icons left">remove_circle</i>Adultes 18+</a>
                                 <a class="collection-item" href="#!">Porn XXX</a>
                                 <a class="collection-item" href="#!">E-books</a>
                                 <a class="collection-item" href="#!">Parodies</a>
@@ -215,9 +221,9 @@
                 </li>
                 <li>
                     <p style="margin: 0; line-height: 0.9" class="center">
-                        &copy; 2018 <a href="//inspirates.io.ci" target="_blank">Inspirates WS</a> | Version: 1.0.7
+                        &copy; 2018 <a href="//inspirates.io.ci" target="_blank">Inspirates WS</a> | version: 1.0.7b-o-T
                         <br>
-                        <small>Aucun droit réservé <br> Thème: <b>Orbit Zero</b> par <a href="//about.me/nightwalker.y" target="_blank">NightWalker Yao</a> </small>
+                        <small>Aucun droit réservé <br> Thème: <b>Orbitt Zero</b> par <a href="//about.me/nightwalker.y" target="_blank">NightWalker Yao</a> </small>
                     </p>
                 </li>
             </div>
@@ -226,53 +232,58 @@
     </header>
     <main>
         <section>
-            <h1 class="titre-principal"><i class="material-icons left" style="font-size: 37pt;">cloud_download</i>Torrents</h1>
-            <div class="divider amber"></div>
-        <!-- the body is here -->
+            <h1 class="titre-principal"><i class="material-icons left" style="font-size: 30pt;">cloud_download</i>Torrents</h1>
+            <div class="divider smoky"></div>
+            <!-- the body is here -->
+            <br>
             <br>
             <div class="cadre-recherche">
-                <form method="get" action="#">
-                    <input type="hidden" name="page" value="search">
-                    <div class="row">
-                        <div class="col s12 m9 l9 searchbox-wrapper">
-                            <input type="search" name="q" value="" class="grey-text text-lighten-3 validate" required="required" id="sQuery" placeholder="Rechercher un Torrent">
-                        </div>
-                        <div class="col s12 m6 l4 input-field">
-                            <select name="category" id="category">
-                                <option value="0">Choisissez une Catégorie</option>
-                                <option value="1">Audios</option>
-                                <option value="2">Vidéos</option>
-                                <option value="3">E-Books</option>
-                                <option value="4">Applications</option>
-                                <option value="5">Jeux Vidéos</option>
-                                <option value="6">Adultes 18+</option>
-                            </select>
-                            <label>Catégorie</label>
-                        </div>
-                        <div class="col s12 m6 l4 input-field" id="subwrapp">
-                            <select name="subcategory" id="subcategory" disabled="disabled">
-                                <option value="0">Choisissez une sous-catégorie</option>
-                            </select>
-                            <label>Sous-Catégorie</label>
-                        </div>
-                        <div class="col s12 m6 l4 input-field">
-                            <select name="active" id="tstatus">
-                                <option value="0" >Tout</option>
-                                <option value="1" selected="selected">Actifs uniquement</option>
-                                <option value="2" >Morts uniquement</option>
-                            </select>
-                            <label>Statut</label>
-                        </div>
-                        <div class="col s12 m12 l3 input-field center-align">
-                            <button class="btn btn-flat waves-effect waves-light amber darken-1 white-text large"><i class="material-icons left">search</i> Rechercher</button>
-                        </div>
-                    </div>
-                </form>
+              <form method="get" action="#">
+                  <input type="hidden" name="page" value="search">
+                  <div class="row">
+                      <div class="block p-1 searchbox-wrapper input-field">
+                          <input type="search" name="q" value="" class="validate" required="required" id="sQuery">
+                          <label for="sQuery">Rechercher un Torrent</label>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="col s12 m6 l4 input-field">
+                          <select name="category" id="category">
+                              <option value="0">Choisissez une Catégorie</option>
+                              <option value="1">Audios</option>
+                              <option value="2">Vidéos</option>
+                              <option value="3">E-Books</option>
+                              <option value="4">Applications</option>
+                              <option value="5">Jeux Vidéos</option>
+                              <option value="6">Adultes 18+</option>
+                          </select>
+                          <label>Catégorie</label>
+                      </div>
+                      <div class="col s12 m6 l4 input-field" id="subwrapp">
+                          <select name="subcategory" id="subcategory" disabled="disabled">
+                              <option value="0">Choisissez une sous-catégorie</option>
+                          </select>
+                          <label for="subcategory">Sous-Catégorie</label>
+                      </div>
+                      <div class="col s12 m6 l4 input-field">
+                          <select name="active" id="tstatus">
+                              <option value="0" >Tout</option>
+                              <option value="1" selected="selected">Actifs uniquement</option>
+                              <option value="2" >Morts uniquement</option>
+                          </select>
+                          <label>Statut</label>
+                      </div>
+                      <div class="col s12 m12 l3 input-field center-align">
+                          <button class="btn btn-flat waves-effect waves-light btn-1"><i class="material-icons left">search</i> Rechercher</button>
+                      </div>
+                  </div>
+              </form>
             </div>
             <br>
-            <div style="margin: 0 0.25em;">
+            <br>
+            <div>
                 <table class="striped highlight responsive-table liste-torrents white">
-                    <thead>
+                    <thead class="uppercase">
                         <tr>
                             <th class="center">Type</th>
                             <th>Titre</th>
@@ -417,20 +428,37 @@
                             <td class="center italic">5986</td>
                         </tr>
                     </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="7">
+                          <ul class="pagination center">
+                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active grey"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tfoot>
                 </table>
             </div>
             <br>
         <!-- body end -->
         </section>
     </main>
+    <br>
+    <br>
     <footer>
-        <br>
-        <br>
-        <div class="center container" style="box-shadow: inset 2px 2px 2px rgba(249, 190, 35, 0.75); color: rgba(249, 190, 35, 0.75)"><h3 class="bold">Ortbit BitTorrent Tracker</h3></div>
+        <div class="center container grey-text">
+            <h3 class="bold" style="margin-bottom: 0em;">Origan BitTorrent Tracker</h3>
+            <small class="italic">Ceci est la version Beta-Open-Tracker du projet Orbitt de Tracker Bittorrent Privé</small>
+        </div>
     </footer>
-    <script type="text/javascript" src="asset/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="asset/js/materialize.min.js"></script>
-    <script type="text/javascript" src="asset/js/theme.js"></script>
-    <script type="text/javascript" src="asset/js/orbit.js"></script>
+    <script src="asset/js/jquery-3.3.1.min.js"></script>
+    <script src="asset/js/materialize.min.js"></script>
+    <script src="asset/js/theme.js"></script>
 </body>
 </html>
