@@ -1,0 +1,107 @@
+.top-bar-searchbox{
+  background-color: rgba(0,0,0,0.2) !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 0 15px !important;
+  width: 96% !important;
+}
+.top-bar-searchbox:focus{
+  border: none !important;
+}
+.card-panel{
+  overflow: hidden !important;
+}
+.has-children{
+  padding-left: 1em;
+}
+.dash-row>div.col>div.card-panel>a.bold, a.panel-title{
+  /* font-size: 15pt;
+  font-weight: 700; */
+}
+.in-card-pan{
+  font-size: 18pt !important;
+  position: relative;
+  top: 4px;
+}
+.card-count{
+  display: block;
+  font-size: 32pt;
+  font-weight: 700;
+}
+.card-last-log{
+  font-size: 13pt;
+  font-weight: 700;
+}
+.card-last-log i.material-icons{
+  font-size: 13pt !important;
+  position: relative;
+  top: 1px;
+}
+.card-bottom{
+  padding: 12px 30px 12px 12px;
+  background-color: rgba(0,0,0,0.2);
+  margin: 1em -30px -25px -25px !important;
+}
+.card-bottom a{
+  color: white;
+  font-size: 10pt;
+  font-weight: 700;
+}
+.card-bottom a .material-icons{
+  font-size: 12pt !important;
+}
+.config-t2{
+  margin-bottom: 1em;
+}
+.server-config-buttons a:hover{
+  text-decoration: underline;
+}
+.server-config-buttons>.col{
+  padding-bottom: 0.7em;
+}
+.line-textfield{
+  max-width: 96% !important;
+}
+.category-level-1{
+  padding-left: 2em !important;
+}
+.category-level-2{
+  padding-left: 4em !important;
+}
+.category-level-2>li{
+  display: inline-block !important;
+  width: 150px;
+  text-align: center;
+}
+.category-name{
+  font-size: 12pt;
+}
+.category-folder, .xplore-folder, .xplore-file{
+  font-size: 38pt !important;
+}
+.category-level-2>li .category-folder{
+  display: block;
+}
+.context_l1>.category-folder{
+  position: relative;
+  top: 12px;
+}
+.context-menu{
+  width: 230px;
+  padding: 2px 0;
+  background-color: #fff;
+}
+.context-menu li a{
+  display: block;
+  vertical-align: baseline;
+  padding: 0 12px 4px 12px;
+  font-size: 11pt;
+}
+.context-menu li a:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+.context-menu li a i{
+  position: relative;
+  top: 4px;
+  font-size: 15pt !important;
+}

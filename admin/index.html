@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="fr-CI">
+<head>
+    <title>My Custom Torrent Tracker!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="my fav Tracker">
+    <meta name="author" content="Nightwalker Yao">
+    <meta name="generator" content="Inspirates WS">
+    <link href="../asset/css/font.css" rel="stylesheet" type="text/css">
+    <link href="../asset/css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Exo:200,400,500,700,900|Indie+Flower|Montserrat:100,300,400,500,700,900" rel="stylesheet">
+    <link href="../asset/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="../asset/css/admin.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <div class="navbar transparent navbar-fixed">
+            <nav class="transparent">
+                <div class="nav-wrapper nav-principal-haut row">
+                    <div class="col l7">
+                        <form method="GET" action="#">
+                          <input type="text" name="q" placeholder="Recherche" class="top-bar-searchbox white-text">
+                        </form>
+                    </div>
+                    <div class="col l5 right-align">
+                        <ul class="right-align">
+                            <li>
+                                <a href="#!" class="dropdown-trigger" data-target="dpdNotifications">
+                                    <i class="material-icons left">notifications</i>
+                                    <span class="reculer-gauche">&nbsp;0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="red-text">
+                                    <i class="material-icons left">file_upload</i>
+                                    <span class="reculer-gauche">15.0Go</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="green-text">
+                                    <i class="material-icons left">file_download</i>
+                                    <span class="reculer-gauche">15.0Go</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="white-text">
+                                    <b>Ratio: 1.0</b>
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#!"><i class="material-icons">chat</i></a>
+                            </li>
+                        </ul>
+                        <div class="dropdown-content" id="dpdNotifications">
+                          <div class="left-align">
+                            <h4 class="marginless p-1">Notifications</h4>
+                            <span class="block tout-voir pb-1 pr-1"><a href="#" class="right small paddingless underlined">Tout voir</a></span>
+                            <button class="block row valign-wrapper transparent unseen ligne-notification borderless">
+                              <div class="col l1">
+                                <br>
+                                <i class="material-icons left n-icone">comment</i>
+                              </div>
+                              <div class="col l11">
+                                Vous avez ete mentionne dans un commentaire
+                                <br>
+                                <span class="small italic grey-text text-darken-1 left">Hier, &agrave; 15:48</span>
+                              </div>
+                            </button>
+
+                            <button class="block row valign-wrapper transparent ligne-notification borderless">
+                              <div class="col l1">
+                                <br>
+                                <i class="material-icons left n-icone">alarm</i>
+                              </div>
+                              <div class="unseen col l11">
+                                Huntr a commente votre torrent <b>"Mon putain de torrent en upload infinitif et roo.ma4"</b>
+                                <br>
+                                <span class="small italic grey-text text-darken-1 left">Hier, &agrave; 15:48</span>
+                              </div>
+                            </button>
+
+                            <button class="block row valign-wrapper transparent ligne-notification borderless">
+                              <div class="col l1">
+                                <br>
+                                <i class="material-icons left n-icone">alarm</i>
+                              </div>
+                              <div class="unseen col l11">
+                                Huntr a commente votre torrent <b>"Mon putain de torrent en upload infinitif et roo.ma4"</b>
+                                <br>
+                                <span class="small italic grey-text text-darken-1 left">Hier, &agrave; 15:48</span>
+                              </div>
+                            </button>
+
+                            <button class="block row valign-wrapper transparent unseen ligne-notification borderless">
+                              <div class="col l1">
+                                <br>
+                                <i class="material-icons left n-icone">alarm</i>
+                              </div>
+                              <div class="unseen col l11">
+                                Huntr a commente votre torrent <b>"Mon putain de torrent en upload infinitif et roo.ma4"</b>
+                                <br>
+                                <span class="small italic grey-text text-darken-1 left">Hier, &agrave; 15:48</span>
+                              </div>
+                            </button>
+
+                            <button class="block row valign-wrapper transparent unseen ligne-notification borderless">
+                              <div class="col l1">
+                                <br>
+                                <i class="material-icons left n-icone">alarm</i>
+                              </div>
+                              <div class="col l11">
+                                Huntr a commente votre torrent <b>"Mon putain de torrent en upload infinitif et roo.ma4"</b>
+                                <br>
+                                <span class="small italic grey-text text-darken-1 left">Hier, &agrave; 15:48</span>
+                              </div>
+                            </button>
+
+                            <button class="block row valign-wrapper transparent ligne-notification borderless">
+                              <div class="col l1">
+                                <br>
+                                <i class="material-icons left n-icone">alarm</i>
+                              </div>
+                              <div class="unseen col l11">
+                                Huntr a commente votre torrent <b>"Mon putain de torrent en upload infinitif et roo.ma4"</b>
+                                <br>
+                                <span class="small italic grey-text text-darken-1 left">Hier, &agrave; 15:48</span>
+                              </div>
+                            </button>
+
+                            <button class="block row valign-wrapper transparent ligne-notification borderless">
+                              <div class="col l1">
+                                <br>
+                                <i class="material-icons left n-icone">comment</i>
+                              </div>
+                              <div class="unseen col l11">
+                                Vous avez ete mentionne dans un commentaire
+                                <br>
+                                <span class="small italic grey-text text-darken-1 left">Hier, &agrave; 15:48</span>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul id="slide-out" class="sidenav sidenav-fixed nav-principal-gauche">
+          <li>
+            <div class="user-view">
+              <div class="background">
+                <img src="../images/img4.jpg">
+              </div>
+              <div class="row">
+                <div class="col l5">
+                  <a href="#user"><img class="circle" src="../images/img2.jpg"></a>
+                </div>
+                <div class="col l7">
+                  <a href="#name"><span class="white-text name">John Doe</span></a>
+                  <a href="#email"><span class="white-text email">Administrateur</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="index.html"><i class="material-icons left">dashboard</i>Tableau de bord</a>
+          </li>
+          <li>
+            <a href="#!"><i class="material-icons left">chrome_reader_mode</i>Nouvelles</a>
+          </li>
+          <li class="has-children">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header"><i class="material-icons left">widgets</i>Cat&eacute;gories<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body transparent">
+                  <ul>
+                    <li><a href="#!">First</a></li>
+                    <li><a href="#!">Second</a></li>
+                    <li><a href="#!">Third</a></li>
+                    <li><a href="#!">Fourth</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header"><i class="material-icons left">group</i>Utilisateurs<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body transparent">
+                  <ul>
+                    <li><a href="#!">First</a></li>
+                    <li><a href="#!">Second</a></li>
+                    <li><a href="#!">Third</a></li>
+                    <li><a href="#!">Fourth</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header"><i class="material-icons left">cloud_queue</i>Torrents<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body transparent">
+                  <ul>
+                    <li><a href="#!">First</a></li>
+                    <li><a href="#!">Second</a></li>
+                    <li><a href="#!">Third</a></li>
+                    <li><a href="#!">Fourth</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!"><i class="material-icons">settings</i>Configuration</a>
+          </li>
+          <li class="has-children">
+            <ul class="collapsible collapsible-accordion">
+              <li>
+                <a class="collapsible-header"><i class="material-icons left">comments</i>Forums<i class="material-icons right">arrow_drop_down</i></a>
+                <div class="collapsible-body transparent">
+                  <ul>
+                    <li><a href="#!">First</a></li>
+                    <li><a href="#!">Second</a></li>
+                    <li><a href="#!">Third</a></li>
+                    <li><a href="#!">Fourth</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!"><i class="material-icons">book</i>Wiki</a>
+          </li>
+          <li>
+            <a href="#!"><i class="material-icons">rss_feed</i>Flux RSS</a>
+          </li>
+          <li>
+            <a href="#!"><i class="material-icons">bug_report</i>Log d'erreurs</a>
+          </li>
+          <li>
+            <a href="#!"><i class="material-icons">select_all</i>Cache</a>
+          </li>
+          <li>
+            <a href="#!"><i class="material-icons">settings_backup_restore</i>Sauvegardes</a>
+          </li>
+          <li>
+            <a href="#!"><i class="material-icons">show_chart</i>Statistiques</a>
+          </li>
+          <li>
+            <a href="#!"><i class="material-icons">polymer</i>&Agrave; propos de Orbitt 1.0</a>
+          </li>
+        </ul>
+
+        <a href="#" data-target="slide-out" class="sidenav-trigger pas-necessaire-sur-large"><i class="material-icons">menu</i></a>
+    </header>
+    <main>
+        <section>
+            <h1 class="titre-principal"><i class="material-icons left" style="font-size: 30pt;">dashboard</i> Tableau de bord</h1>
+            <div class="divider smoky"></div>
+
+            <div class="row p-1 dash-row">
+
+              <div class="col white-text center l3">
+                <div class="card-panel cyan m-1-2">
+                  <a href="news.html" class="bold white-text">
+                    <i class="material-icons in-card-pan">chrome_reader_mode</i>
+                    Nouvelles
+                  </a>
+                  <span class="card-count">130</span>
+                  <span class="card-last-log block"><i class="material-icons">access_time</i> Derni&egrave;re: il y a 14 jours</span>
+                  <div class="card-bottom center-align">
+                    <a href="news-post.html"><i class="material-icons">add_circle</i>Poster une nouvelle</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col white-text center l3">
+                <div class="card-panel pink lighten-1 m-1-2">
+                  <a href="categories.html" class="bold white-text">
+                    <i class="material-icons in-card-pan">widgets</i>
+                    Cat&eacute;gories
+                  </a>
+                  <span class="card-count">30</span>
+                  <span class="card-last-log block"><i class="material-icons">ac_unit</i> Sous-Cat&eacute;gories: 53</span>
+                  <div class="card-bottom center-align">
+                    <a href="#" onclick="$('#modal_newcategory').modal('open');"><i class="material-icons">add_circle</i>Nouvelle Cat&eacute;gorie</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col white-text center l3">
+                <div class="card-panel teal darken-2 m-1-2">
+                  <a href="users.html" class="bold white-text">
+                    <i class="material-icons in-card-pan">people</i>
+                    Utilisateurs
+                  </a>
+                  <span class="card-count">30</span>
+                  <a href="users-list.html">
+                    <span class="card-last-log block">
+                      <i class="material-icons">person_outline</i> 140 Nouveaux inscrits
+                    </span>
+                  </a>
+                  <div class="card-bottom center-align">
+                    <a href="users-list.html"><i class="material-icons">people_outline</i>Tous les Utilisateurs</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col white-text center l3">
+                <div class="card-panel purple darken-2 m-1-2">
+                  <a href="forum.html" class="bold white-text">
+                    <i class="material-icons in-card-pan">comment</i>
+                    Forums - Sujets
+                  </a>
+                  <span class="card-count">308</span>
+                  <span class="card-last-log block"><i class="material-icons">filter_9_plus</i> 1,400 R&eacute;ponses</span>
+                  </a>
+                  <div class="card-bottom center-align">
+                    <a href="forum-subjects-list.html"><i class="material-icons">folder_open</i>Parcourir les sujets</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col white-text center l5">
+                <div class="card-panel blue darken-2 m-1-2">
+                  <div class="row">
+                    <div class="col l6">
+                      <a href="torrents.html" class="bold white-text">
+                        <i class="material-icons in-card-pan">cloud_queue</i>
+                        Torrents
+                      </a>
+                      <span class="card-count">30,000</span>
+                      <a href="torrents.html">
+                        <span class="card-last-log block">
+                          <i class="material-icons">cloud</i> 140 Nouveaux torrents
+                        </span>
+                      </a>
+                    </div>
+                    <div class="col l6 left-align">
+                      <div class="torrents-linz">
+                        <span class="block bold">Resum&eacute;</span>
+                        <div class="card-part-resume">
+                          <a href="#" class="block white-text">140 en attente de validation</a>
+                          <a href="#" class="block white-text">140 torrents morts</a>
+                          <a href="#" class="block white-text">140 torrents signal&eacute;s</a>
+                          <a class="block white-text">140,000,000 t&eacute;l&eacute;chargements en tout !</a>
+                          <a href="#" class="block white-text">140 torrents actifs</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col l12 left-align">
+                      <br>
+                      <b class="block"> 8 Derniers Torrents</b>
+                      <a href="torrents-single-view.html" class="white-text">Ceci.est.un.nom.de.torrent.pas.tres.inspirant-ORBITT.flv</a>
+                      <a href="#" class="white-text">Ceci.est.un.nom.de.torrent.pas.tres.inspirant-ORBITT.flv</a>
+                      <a href="#" class="white-text">Ceci.est.un.nom.de.torrent.pas.tres.inspirant-ORBITT.flv</a>
+                      <a href="#" class="white-text">Ceci.est.un.nom.de.torrent.pas.tres.inspirant-ORBITT.flv</a>
+                      <a href="#" class="white-text">Ceci.est.un.nom.de.torrent.pas.tres.inspirant-ORBITT.flv</a>
+                      <a href="#" class="white-text">Ceci.est.un.nom.de.torrent.pas.tres.inspirant-ORBITT.flv</a>
+                      <a href="#" class="white-text">Ceci.est.un.nom.de.torrent.pas.tres.inspirant-ORBITT.flv</a>
+                      <a href="#" class="white-text">Ceci.est.un.nom.de.torrent.pas.tres.inspirant-ORBITT.flv</a>
+                    </div>
+                  </div>
+                  <div class="card-bottom center-align">
+                    <a href="torrents-add.html"><i class="material-icons">file_upload</i>Ajouter des Torrents</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col white-text center l7">
+                <div class="card-panel blue-grey darken-2 m-1-2">
+                  <h2 class="uppercase config-t2" style="margin-top:-0.8em;">configurations du tracker</h2>
+                  <div class="row">
+                    <div class="col l6">
+                      <div class="row server-config-buttons">
+                        <div class="col l3">
+                          <a href="configure-tracker.html" class="white-text">
+                            <i class="material-icons">settings</i> <br>
+                            <span>Tracker</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-users.html" class="white-text">
+                            <i class="material-icons">people</i> <br>
+                            <span>Utilisateurs</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-forum.html" class="white-text">
+                            <i class="material-icons">comment</i> <br>
+                            <span>Forums</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-storage.html" class="white-text">
+                            <i class="material-icons">storage</i> <br>
+                            <span>Stockage</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-caching.html" class="white-text">
+                            <i class="material-icons">select_all</i> <br>
+                            <span>Cache</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-error-logs.html" class="white-text">
+                            <i class="material-icons">bug_report</i> <br>
+                            <span>Journaux d'erreurs</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-database.html" class="white-text">
+                            <i class="material-icons">data_usage</i> <br>
+                            <span>Base de donn&eacute;es</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-backups.html" class="white-text">
+                            <i class="material-icons">settings_backup_restore</i> <br>
+                            <span>Sauvegardes</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-rss-feed.html" class="white-text">
+                            <i class="material-icons">rss_feed</i> <br>
+                            <span>Flux RSS</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-sitemap.html" class="white-text">
+                            <i class="material-icons">map</i> <br>
+                            <span>Sitemap</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-themes.html" class="white-text">
+                            <i class="material-icons">filter_vintage</i> <br>
+                            <span>Th&egrave;mes</span>
+                          </a>
+                        </div>
+                        <div class="col l3">
+                          <a href="configure-wiki.html" class="white-text">
+                            <i class="material-icons">book</i> <br>
+                            <span>Wiki</span>
+                          </a>
+                        </div>
+                      </div>
+                      <span class="block">URL d'annonce: <span class="bold italic">https://localhost:27/announce</span></span>
+                    </div>
+                    <div class="col l6 left-align">
+                      <div class="torrents-linz">
+                        <span class="block bold">Contr&ocirc;les rapide</span>
+                        <br>
+                        <div class="row center-align">
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Mode Maintenance
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Mode d&eacute;veloppement
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Tracking Priv&eacute;
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Torrents externes
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox" checked>
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            DHT
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Inscriptions
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox" checked>
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Invitations uniquement
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Auto validation des utilisateurs
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox">
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Validation par e-mail
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox" checked>
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Mise en cache
+                          </div>
+                          <div class="col">
+                            <div class="switch">
+                              <label>
+                                <input type="checkbox" checked>
+                                <span class="lever"></span>
+                              </label>
+                            </div>
+                            Statistiques
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-bottom center-align">
+                    <a href="#" class="white-text">Sauvegarder la configuration actuelle</a>
+                    &middot; <a href="#" class="white-text">Importer une configuration</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col white-text center l12">
+                <div class="card-panel deep-orange accent-2 m-1-2">
+                  <div class="row">
+                    <div class="col l4">
+                      <a href="torrents.html" class="bold white-text">
+                        <i class="material-icons in-card-pan">pie_chart</i>
+                        Statistiques
+                      </a>
+                      <div>
+                        <span class="card-count">18</span> utilisateurs en ligne
+                      </div>
+                      <div>
+                        188 inscrits aujourd'hui
+                      </div>
+                      <div>
+                        179 connect&eacute;s aujourd'hui
+                      </div>
+                      <div>
+                        15 en attente de validation
+                      </div>
+                      <div>
+                        15,559,230 visites en tout
+                      </div>
+                    </div>
+                    <div class="col l4">
+                      <h2 class="uppercase" style="margin-top:-0.8em;">En ligne</h2>
+                      <div class="--">
+                        <a href="#" class="white-text">Huntr_up</a> &middot; <a href="#" class="white-text">Hello world</a> &middot; <a href="#" class="white-text">Pinger</a> &middot; <a href="#" class="white-text">Dloader</a> &middot; <a href="#" class="white-text">Administarator</a> &middot; <a href="#" class="white-text">Over_takr</a> &middot; <a href="#" class="white-text">theOwner</a> &middot; <a href="#" class="white-text">dzon3</a> &middot;
+                      </div>
+                  </div>
+                  <div class="col l4">
+                    <h2 class="uppercase" style="margin-top:-0.8em;">Charge du serveur</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col l4">
+                    <h2 class="uppercase">visites aujourd'hui</h2>
+                    Display charts here
+                  </div>
+                  <div class="col l4">
+                    <h2 class="uppercase">visites ce mois</h2>
+                    Display charts here
+                  </div>
+                  <div class="col l4">
+                    <h2 class="uppercase">visites cette ann&eacute;e</h2>
+                    Display charts here
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </section>
+
+        <!-- Modal structures  -->
+        <div id="modal_newcategory" class="modal hello_modal">
+          <div class="modal-header grey white-text">
+            <i class="material-icons modal-icon">create</i> Nouvelle cat&eacute;gorie <span class="item_props_name"></span>
+            <a href="#!" class="modal-close white-text right"><i class="material-icons">close</i></a>
+          </div>
+          <div class="modal-content">
+            <div class="p-1">
+              <form method="post">
+                <div class="input-field">
+                  <select name="category" id="new_category_parent">
+                    <option value="0">Root</option>
+                    <option value="1">Audio</option>
+                    <option value="11">Audio</option>
+                    <option value="12">Audio</option>
+                    <option value="13">Audio</option>
+                    <option value="131">Audios</option>
+                  </select>
+                  <label for="new_category_parent">Cat&eacute;gorie parente</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" name="newname" id="category_newname" class="validate" required />
+                  <label for="category_newname">Nom de la cat&eacute;gorie</label>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-flat btn-1 white-text">Cr&eacute;er</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+    </main>
+    <br>
+    <br>
+    <footer>
+        <div class="center container grey-text">
+            <h3 class="bold" style="margin-bottom: 0em;">Origan BitTorrent Tracker</h3>
+            <small class="italic">Ceci est la version Beta-Open-Tracker du projet Orbitt de Tracker Bittorrent Privé</small>
+        </div>
+    </footer>
+    <script src="../asset/js/jquery-3.3.1.min.js"></script>
+    <script src="../asset/js/materialize.min.js"></script>
+    <script src="../asset/js/theme.js"></script>
+</body>
+</html>
